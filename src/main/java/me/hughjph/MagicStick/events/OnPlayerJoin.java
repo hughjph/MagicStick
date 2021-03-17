@@ -13,14 +13,23 @@ public class OnPlayerJoin implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
+
         Player player = e.getPlayer();
 
         Inventory playerInventory = player.getInventory();
 
-        if(playerInventory.contains(MagicStickItem.magicStick)){
-            return;
+        if(MagicStick.magicStickToggle){
+            if(playerInventory.contains(MagicStickItem.magicStick)){
+                return;
+            } else{
+                playerInventory.addItem(MagicStickItem.magicStick);
+            }
         } else{
-            playerInventory.addItem(MagicStickItem.magicStick);
+            if(playerInventory.contains(MagicStickItem.magicStick)){
+                playerInventory.remove(MagicStickItem.magicStick);
+            }
         }
+
+
     }
 }
