@@ -29,7 +29,7 @@ public class PrepareCraftItem implements Listener {
             if(!(inCraftingItems[i] == null)){
                 if(inCraftingItems[i].getItemMeta().equals(MagicStickItem.magicStick.getItemMeta())){
                     inv.setResult(null);
-                    player.sendMessage(ChatColor.RED + "This item cannot be used in crafting!");
+                    player.sendMessage(ChatColor.RED + "You cannot use the " + ChatColor.GOLD + "MAGIC STICK " + ChatColor.RED + "in an anvil!");
                 }
             }
 

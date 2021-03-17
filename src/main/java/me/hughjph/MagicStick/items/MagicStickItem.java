@@ -16,12 +16,11 @@ public class MagicStickItem {
 
     public static void stick(){
 
-
         ItemStack item = new ItemStack(Material.STICK);
 
         ItemMeta itemMeta = item.getItemMeta();
 
-        itemMeta.setDisplayName(Color.AZURE + "Magic Stick");
+        itemMeta.setDisplayName(ChatColor.AQUA + "Magic Stick");
         itemMeta.addEnchant(Enchantment.KNOCKBACK, 8, true);
         itemMeta.addEnchant(Enchantment.FIRE_ASPECT, 4, true);
 

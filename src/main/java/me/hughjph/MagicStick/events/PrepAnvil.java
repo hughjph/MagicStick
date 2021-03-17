@@ -20,13 +20,16 @@ public class PrepAnvil implements Listener {
 
 
         for(int i = 0; i<inCraftingItems.length; i++){
-            if(inCraftingItems[i].getItemMeta() == MagicStickItem.magicStick.getItemMeta()){
+            if(!(inCraftingItems[i]==null)){
+                if(inCraftingItems[i].getItemMeta() == MagicStickItem.magicStick.getItemMeta()){
 
-                result.setType(null);
+                    result.setType(null);
 
-                player.sendMessage(ChatColor.RED + "You cannot use the " + ChatColor.GOLD + "MAGIC STICK " + ChatColor.RED + "in crafting!");
-                return;
+                    player.sendMessage(ChatColor.RED + "You cannot use the " + ChatColor.GOLD + "MAGIC STICK " + ChatColor.RED + "in an anvil!");
+                    return;
+                }
             }
+
         }
 
 
