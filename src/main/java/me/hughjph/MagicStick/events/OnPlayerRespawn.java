@@ -18,10 +18,10 @@ public class OnPlayerRespawn implements Listener {
 
         Inventory playerInventory = player.getInventory();
 
-        if(playerInventory.contains(MagicStickItem.stick())){
+        if(playerInventory.contains(MagicStickItem.magicStick)){
             return;
         } else{
-            playerInventory.addItem(MagicStickItem.stick());
+            playerInventory.addItem(MagicStickItem.magicStick);
         }
     }
 

@@ -20,7 +20,7 @@ public class PrepAnvil implements Listener {
 
 
         for(int i = 0; i<inCraftingItems.length; i++){
-            if(inCraftingItems[i] == MagicStickItem.stick()){
+            if(inCraftingItems[i].getItemMeta() == MagicStickItem.magicStick.getItemMeta()){
 
                 result.setType(null);
 

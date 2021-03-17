@@ -1,0 +1,7 @@
+me\hughjph\MagicStick\items\MagicStickItem.class
+me\hughjph\MagicStick\MagicStick.class
+me\hughjph\MagicStick\events\OnPlayerRespawn.class
+me\hughjph\MagicStick\events\PrepareCraftItem.class
+me\hughjph\MagicStick\events\PrepAnvil.class
+me\hughjph\MagicStick\events\OnPlayerJoin.class
+me\hughjph\MagicStick\events\DropEvent.class

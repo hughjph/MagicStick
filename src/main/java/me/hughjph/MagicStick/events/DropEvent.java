@@ -2,6 +2,7 @@ package me.hughjph.MagicStick.events;
 
 import me.hughjph.MagicStick.MagicStick;
 import me.hughjph.MagicStick.items.MagicStickItem;
+import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -15,15 +16,14 @@ public class DropEvent implements Listener {
 
         ItemStack item = e.getItemDrop().getItemStack();
         Player player = e.getPlayer();
+        Item dropped = e.getItemDrop();
 
 
-        if(!(item == MagicStickItem.stick())){
 
-            return;
-
+        if(dropped.getItemStack().getItemMeta().equals(MagicStickItem.magicStick.getItemMeta())){
+            item.setAmount(0);
+            player.getInventory().addItem(MagicStickItem.magicStick);
         }
-
-        e.setCancelled(true);
 
     }
 
