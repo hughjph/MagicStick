@@ -1,3 +1,7 @@
 main: me.hughjph.MagicStick.MagicStick
 version: 1.0
 name: MagicStick
+
+commands:
+  togglemagicstick:
+    description: toggles the existence of the magic stick

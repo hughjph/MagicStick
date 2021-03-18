@@ -17,7 +17,7 @@ public class MagicStick extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PrepAnvil(), this);
         getServer().getPluginManager().registerEvents(new PrepareCraftItem(), this);
         getServer().getPluginManager().registerEvents(new OnPlayerDeath(), this);
-
+        getServer().getPluginManager().registerEvents(new OnRightClick(), this);
         getCommand("togglemagicstick").setExecutor(new Toggle());
 
         MagicStickItem.stick();
