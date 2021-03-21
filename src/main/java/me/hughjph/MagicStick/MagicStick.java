@@ -11,13 +11,7 @@ public class MagicStick extends JavaPlugin {
 
     @Override
     public void onEnable(){
-        getServer().getPluginManager().registerEvents(new DropEvent(), this);
-        getServer().getPluginManager().registerEvents(new OnPlayerJoin(), this);
-        getServer().getPluginManager().registerEvents(new OnPlayerRespawn(), this);
-        getServer().getPluginManager().registerEvents(new PrepAnvil(), this);
-        getServer().getPluginManager().registerEvents(new PrepareCraftItem(), this);
-        getServer().getPluginManager().registerEvents(new OnPlayerDeath(), this);
-        getServer().getPluginManager().registerEvents(new OnRightClick(), this);
+        getServer().getPluginManager().registerEvents(new StickEvents(), this);
         getCommand("togglemagicstick").setExecutor(new Toggle());
 
         MagicStickItem.stick();

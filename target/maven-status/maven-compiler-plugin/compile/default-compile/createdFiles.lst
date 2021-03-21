@@ -1,11 +1,12 @@
-me\hughjph\MagicStick\items\MagicStickItem.class
-me\hughjph\MagicStick\MagicStick.class
 me\hughjph\MagicStick\commands\Toggle.class
-me\hughjph\MagicStick\events\OnPlayerRespawn.class
 me\hughjph\MagicStick\events\PrepareCraftItem.class
 me\hughjph\MagicStick\events\PrepAnvil.class
 me\hughjph\MagicStick\events\OnPlayerJoin.class
+me\hughjph\MagicStick\events\StickEvents.class
 me\hughjph\MagicStick\events\DropEvent.class
+me\hughjph\MagicStick\logic\AddRemoveStick.class
+me\hughjph\MagicStick\items\MagicStickItem.class
+me\hughjph\MagicStick\MagicStick.class
+me\hughjph\MagicStick\events\OnPlayerRespawn.class
 me\hughjph\MagicStick\events\OnPlayerDeath.class
 me\hughjph\MagicStick\events\OnRightClick.class
-me\hughjph\MagicStick\logic\AddRemoveStick.class

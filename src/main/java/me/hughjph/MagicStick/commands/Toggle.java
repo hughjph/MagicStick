@@ -1,7 +1,6 @@
 package me.hughjph.MagicStick.commands;
 
 import me.hughjph.MagicStick.MagicStick;
-import me.hughjph.MagicStick.items.MagicStickItem;
 import me.hughjph.MagicStick.logic.AddRemoveStick;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
