@@ -15,7 +15,6 @@ public class MagicStick extends JavaPlugin {
         getCommand("togglemagicstick").setExecutor(new Toggle());
 
         MagicStickItem.stick();
-
     }
 
 
